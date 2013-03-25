@@ -1,0 +1,557 @@
+2013-03-24 19:51:31 Error: [MissingControllerException] Controller class UsuariosController could not be found.
+Exception Attributes: array (
+  'class' => 'UsuariosController',
+  'plugin' => NULL,
+)
+Request URL: /usuarios
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-24 19:57:31 Error: [MissingActionException] Action UsuariosController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'index',
+)
+Request URL: /usuarios
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-24 19:58:15 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 6]
+2013-03-24 19:58:15 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /usuarios
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 6, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 6, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 19:58:59 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /usuarios
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Model\ConnectionManager.php(102): DboSource->__construct(Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(3209): ConnectionManager::getDataSource('default')
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(1108): Model->setDataSource('default')
+#4 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(3231): Model->setSource('usuarios')
+#5 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(2688): Model->getDataSource()
+#6 C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php(6): Model->find('all')
+#7 [internal function]: UsuariosController->index()
+#8 C:\Users\luisc\workspace\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-24 20:01:13 Error: [MissingViewException] View file "C:\Users\luisc\workspace\cake\app\View\Usuarios\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Users\\luisc\\workspace\\cake\\app\\View\\Usuarios\\index.ctp',
+)
+Request URL: /usuarios
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-24 20:10:40 Error: [MissingControllerException] Controller class PfmdbController could not be found.
+Exception Attributes: array (
+  'class' => 'PfmdbController',
+  'plugin' => NULL,
+)
+Request URL: /pfmdb
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-24 20:10:58 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /index
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-24 20:12:02 Error: [MissingControllerException] Controller class UsuarioController could not be found.
+Exception Attributes: array (
+  'class' => 'UsuarioController',
+  'plugin' => NULL,
+)
+Request URL: /usuario
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-24 20:19:19 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /usuarios/view/1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-24 20:56:02 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 16]
+2013-03-24 20:56:02 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 20:56:07 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 16]
+2013-03-24 20:56:07 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 20:59:45 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 16]
+2013-03-24 20:59:45 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:00:02 Error: Fatal Error (4): syntax error, unexpected ''matricula'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\luisc\workspace\cake\app\Model\Usuario.php, line 10]
+2013-03-24 21:00:02 Error: [FatalErrorException] syntax error, unexpected ''matricula'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:00:58 Error: Fatal Error (4): syntax error, unexpected ''matricula'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\luisc\workspace\cake\app\Model\Usuario.php, line 10]
+2013-03-24 21:00:58 Error: [FatalErrorException] syntax error, unexpected ''matricula'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:01:02 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 11]
+2013-03-24 21:01:02 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /usuarios/view/1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 11, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 11, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:03:29 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 11]
+2013-03-24 21:03:29 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /usuarios/view/1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 11, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 11, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:04:30 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 16]
+2013-03-24 21:04:30 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:05:08 Error: Fatal Error (1): Call to a member function save() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 16]
+2013-03-24 21:05:08 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 16, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:23:45 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 11]
+2013-03-24 21:23:45 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /usuarios/view/1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Users\luisc\...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Users\luisc\...', 11, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Users\luisc\...', 11, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:32:38 Error: Fatal Error (4): syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\luisc\workspace\cake\app\Model\Usuario.php, line 6]
+2013-03-24 21:32:38 Error: [FatalErrorException] syntax error, unexpected ''rule'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /usuarios/
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 6, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 6, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-24 21:42:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'login'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pf...', Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `pf...')
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(1736): DboSource->create(Object(Usuario), Array, Array)
+#4 C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php(16): Model->save(Array)
+#5 [internal function]: UsuariosController->add()
+#6 C:\Users\luisc\workspace\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-24 21:42:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'login'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pf...', Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `pf...')
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(1736): DboSource->create(Object(Usuario), Array, Array)
+#4 C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php(16): Model->save(Array)
+#5 [internal function]: UsuariosController->add()
+#6 C:\Users\luisc\workspace\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-24 21:44:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'login'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pf...', Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `pf...')
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(1736): DboSource->create(Object(Usuario), Array, Array)
+#4 C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php(16): Model->save(Array)
+#5 [internal function]: UsuariosController->add()
+#6 C:\Users\luisc\workspace\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-24 22:34:28 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php, line 21]
+2013-03-24 22:34:28 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 21, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 21, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 00:14:07 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [C:\Users\luisc\workspace\cake\app\View\Usuarios\add.ctp, line 4]
+2013-03-25 00:14:07 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 4, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 4, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 00:24:11 Error: Fatal Error (4): syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\luisc\workspace\cake\app\View\Usuarios\add.ctp, line 6]
+2013-03-25 00:24:11 Error: [FatalErrorException] syntax error, unexpected ''type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 6, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 6, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 00:28:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '054.553.704-56' for key 'cpf'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pf...', Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `pf...')
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(1736): DboSource->create(Object(Usuario), Array, Array)
+#4 C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php(20): Model->save(Array)
+#5 [internal function]: UsuariosController->add()
+#6 C:\Users\luisc\workspace\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-25 00:29:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '054.553.704-56' for key 'cpf'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pf...', Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `pf...')
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Model\Model.php(1736): DboSource->create(Object(Usuario), Array, Array)
+#4 C:\Users\luisc\workspace\cake\app\Controller\UsuariosController.php(20): Model->save(Array)
+#5 [internal function]: UsuariosController->add()
+#6 C:\Users\luisc\workspace\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#7 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 C:\Users\luisc\workspace\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-25 00:32:25 Error: Fatal Error (4): syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\luisc\workspace\cake\app\Model\Usuario.php, line 10]
+2013-03-25 00:32:25 Error: [FatalErrorException] syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 00:32:58 Error: Fatal Error (4): syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\luisc\workspace\cake\app\Model\Usuario.php, line 10]
+2013-03-25 00:32:58 Error: [FatalErrorException] syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 00:33:02 Error: Fatal Error (4): syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\Users\luisc\workspace\cake\app\Model\Usuario.php, line 10]
+2013-03-25 00:33:02 Error: [FatalErrorException] syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /usuarios/add
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#2 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\luisc\...', 10, Array)
+#3 C:\Users\luisc\workspace\cake\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 01:19:42 Error: [MissingControllerException] Controller class ScrapeController could not be found.
+Exception Attributes: array (
+  'class' => 'ScrapeController',
+  'plugin' => NULL,
+)
+Request URL: /scrape?info_hash=%EE%EF%0F%FE%8C%C3%3CtQ%DA%DA%A5%7D%A46%03rU%84%D9
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:19:42 Error: [MissingControllerException] Controller class ScrapeController could not be found.
+Exception Attributes: array (
+  'class' => 'ScrapeController',
+  'plugin' => NULL,
+)
+Request URL: /scrape?info_hash=%D4X%B5%28%BB.pW%E5H%3C%DC%89%BE%B7P%FBr%99b
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:19:43 Error: [MissingControllerException] Controller class ScrapeController could not be found.
+Exception Attributes: array (
+  'class' => 'ScrapeController',
+  'plugin' => NULL,
+)
+Request URL: /scrape?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:19:52 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%C2%B9%99%0D%84%13%1C%F6b%1BeEl%DAL%97%13%B7%9B4&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=0&downloaded=0&left=11748163584&corrupt=0&key=5497ABE3&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:20:06 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=Y%0A%C9%ACq%FCDT%2A%EC%F4%29%A6%0C%07j%26%E43m&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=0&downloaded=0&left=4686675968&corrupt=0&key=3E265320&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:20:11 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=0&downloaded=0&left=8388608&corrupt=0&key=2F24AD33&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:49:56 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%C2%B9%99%0D%84%13%1C%F6b%1BeEl%DAL%97%13%B7%9B4&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=18219008&downloaded=50331648&left=11679105024&corrupt=0&key=6D329C9D&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:50:17 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=42909696&downloaded=0&left=8388608&corrupt=0&key=DB909D7B&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 01:50:18 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=Y%0A%C9%ACq%FCDT%2A%EC%F4%29%A6%0C%07j%26%E43m&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=40058880&downloaded=339738624&left=4343201792&corrupt=0&key=649A3F97&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 02:20:00 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%C2%B9%99%0D%84%13%1C%F6b%1BeEl%DAL%97%13%B7%9B4&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=38420480&downloaded=167772160&left=11583176704&corrupt=0&key=6CE6AC3B&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 02:20:23 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=87326720&downloaded=0&left=8388608&corrupt=0&key=B64CB400&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 02:20:30 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=Y%0A%C9%ACq%FCDT%2A%EC%F4%29%A6%0C%07j%26%E43m&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=51331072&downloaded=423624704&left=4267425792&corrupt=0&key=8DF8B6D4&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 02:50:04 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%C2%B9%99%0D%84%13%1C%F6b%1BeEl%DAL%97%13%B7%9B4&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=61554688&downloaded=176160768&left=11557224448&corrupt=0&key=523EC3E9&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 02:50:29 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=137838592&downloaded=0&left=8388608&corrupt=0&key=8947900A&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 02:50:42 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=Y%0A%C9%ACq%FCDT%2A%EC%F4%29%A6%0C%07j%26%E43m&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=68075520&downloaded=501219328&left=4192239616&corrupt=0&key=A86BFDBF&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 03:20:08 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%C2%B9%99%0D%84%13%1C%F6b%1BeEl%DAL%97%13%B7%9B4&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=79511552&downloaded=285212672&left=11456724992&corrupt=0&key=E656C017&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 03:20:35 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=181534720&downloaded=0&left=8388608&corrupt=0&key=4C4F0C6A&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 03:20:54 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=Y%0A%C9%ACq%FCDT%2A%EC%F4%29%A6%0C%07j%26%E43m&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=78381056&downloaded=524288000&left=4168105984&corrupt=0&key=36E26801&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 03:50:12 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%C2%B9%99%0D%84%13%1C%F6b%1BeEl%DAL%97%13%B7%9B4&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=97812480&downloaded=318767104&left=11408392192&corrupt=0&key=36BE5626&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 03:50:41 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=220069888&downloaded=0&left=8388608&corrupt=0&key=67A77B63&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 03:51:06 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=Y%0A%C9%ACq%FCDT%2A%EC%F4%29%A6%0C%07j%26%E43m&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=92241920&downloaded=538968064&left=4150034432&corrupt=0&key=3986EFFA&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 04:20:16 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%C2%B9%99%0D%84%13%1C%F6b%1BeEl%DAL%97%13%B7%9B4&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=125632512&downloaded=352321536&left=11367710720&corrupt=0&key=58A375E9&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 04:21:01 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=%B3o%B1%E2%C1j%F7%82%C5B%EA%8D%8C%E9%C2%2F%60%98%C38&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=269926400&downloaded=0&left=8388608&corrupt=0&key=A17C59F2&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 04:21:18 Error: [MissingControllerException] Controller class AnnounceController could not be found.
+Exception Attributes: array (
+  'class' => 'AnnounceController',
+  'plugin' => NULL,
+)
+Request URL: /announce?info_hash=Y%0A%C9%ACq%FCDT%2A%EC%F4%29%A6%0C%07j%26%E43m&peer_id=-UT3230-%21p%AA%82F%D2%E7%B7%09-%A8%B0&port=57768&uploaded=105447424&downloaded=589299712&left=4099964928&corrupt=0&key=B8EF3B36&event=started&numwant=200&compact=1&no_peer_id=1
+Stack Trace:
+#0 C:\Users\luisc\workspace\cake\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
