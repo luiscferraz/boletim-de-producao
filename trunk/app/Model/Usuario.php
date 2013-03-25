@@ -1,7 +1,7 @@
 <?php
 class Usuario extends AppModel {
 
-        public $useTable = 'usuarios';
+    /**public $useTable = 'usuarios';*/
 
 	public $validate = array(
 
