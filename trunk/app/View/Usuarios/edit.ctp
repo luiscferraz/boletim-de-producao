@@ -3,7 +3,7 @@
 	<div class="left">
 		<fieldset id="dados_funcionais">
 			<legend class="legenda">Dados Funcionais</legend>
-
+<?php echo $this->Form->input('Usuario.id', array('type' => 'hidden')); ?>
 <?php echo $this->Form->input('Usuario.login', array('label' => 'Login:','required'=>'required', 'id' => 'login')); ?>
 <?php echo $this->Form->input('Usuario.senha', array('label' => 'Senha:','required'=>'required', 'id' => 'senha')); ?>
 <?php echo $this->Form->input('Usuario.tipo', array('options' => array('admin' => 'ADM', 'user' => 'Usuário'),'type' => 'select', 'empty' => 'Selecione','label' => 'Tipo:','required'=>'required', 'id' => 'tipo')); ?>
@@ -19,6 +19,7 @@
 		<fieldset id="dados_pessoais">
 			<legend class="legenda">Dados Pessoais</legend>
 
+<?php echo $this->Form->input('Dados.id', array('type' => 'hidden')); ?>
 <?php echo $this->Form->input('Dados.endereco', array('label' => 'Endereço:','required'=>'required', 'id' => 'endereco')); ?>
 <?php echo $this->Form->input('Dados.numero', array('label' => 'Número:','required'=>'required', 'id' => 'numero')); ?>
 <?php echo $this->Form->input('Dados.complemento', array('label' => 'Complemento:','id' => 'complemento')); ?>

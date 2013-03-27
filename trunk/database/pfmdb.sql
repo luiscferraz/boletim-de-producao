@@ -41,14 +41,16 @@ CREATE TABLE IF NOT EXISTS `dados` (
   `usuario_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `usuario_id` (`usuario_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Extraindo dados da tabela `dados`
 --
 
 INSERT INTO `dados` (`id`, `endereco`, `numero`, `complemento`, `bairro`, `cidade`, `estado`, `cep`, `telefone1`, `telefone2`, `email`, `usuario_id`) VALUES
-(1, 'RUA IMPERADOR', '233', NULL, 'CANDEIAS', 'JABOATAO', 'PE', '50000-000', '(81)3333-4444', '(81)3333-4444', 'luis.c.ferraz@gmail.com', 1);
+(1, 'RUA IMPERADOR', '233', '', 'CANDEIAS', 'JABOATAO', 'PE', '50000-000', '(81)3333-4444', '(81)3333-4444', 'luis.c.ferraz@gmail.com', 1),
+(4, 'RUA SAO JOAO', '13', '', 'PIEDADE', 'JABOATAO', 'PE', '50000-000', '8133552350', '8133552350', 'luis.c.ferraz@gmail.com', 10),
+(5, 'RUA DOM PEDRO', '233', '202', 'CANDEIAS', 'JABOATAO', 'PE', '50000-000', '8133552350', '8133552350', 'luis.c.ferraz@gmail.com', 9);
 
 -- --------------------------------------------------------
 
@@ -69,20 +71,16 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `cpf` (`cpf`),
   KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `login`, `senha`, `tipo`, `nome`, `matricula`, `cpf`, `admissao`, `nascimento`) VALUES
-(1, 'luisc', '111', 'admin', 'LUIS CARLOS FERRAZ', '10', '054.553.704-56', '0000-00-00', ''),
-(4, 'tina', '982', 'user', 'TINA FERRAZ', '213', '092.872.230-09', '0000-00-00', ''),
-(9, 'john', '123', 'user', 'JOHNNY WALKER', '9839', '002.132.144-12', '2013-03-25', ''),
-(10, 'catarina', '123', 'admin', 'CATARINA FERRAZ', '122', '120.223.123-22', '03/12/2010', '01/12/2000'),
-(11, 'juliana', '982', 'admin', 'MARIA CAROLINA FERRAZ', '09320', '032.032.032-12', '03/12/2010', '01/12/2000'),
-(12, 'paul', '123', 'admin', 'PAUL KNIGHT', '122', '111.222.923-12', '03/12/2010', '01/12/2000'),
-(13, 'luisc', '123', 'admin', 'LUIS CARLOS FERRAZ', '09320', '123.133.212-13', '03/12/2010', '01/12/2000');
+(1, 'luisc', '111', 'admin', 'LUIS CARLOS FERRAZ', '10', '054.553.704-56', '11/12/2013', '23/12/1985'),
+(9, 'john', '123', 'user', 'JOHNNY WALKER', '9839', '002.132.144-12', '20/01/2009', '01/12/2000'),
+(10, 'catarina', '123', 'admin', 'CATARINA FERRAZ', '122', '120.223.123-22', '03/12/2010', '01/12/2000');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
