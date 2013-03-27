@@ -18,7 +18,7 @@ class UsuariosController extends AppController {
         if ($this->request->is('post')) {
             $this->Usuario->create();
 
-            if ($this->Usuario->save($this->request->data)) {
+            if ($this->Usuario->saveAll($this->request->data)) {
                 $this->Session->setFlash('Usuário adicionado com sucesso.');
                 $this->redirect(array('action' => 'index'));
             } else {
@@ -34,7 +34,7 @@ class UsuariosController extends AppController {
 		    $this->request->data = $this->Usuario->read();
 
 		} else {
-		    if ($this->Usuario->save($this->request->data)) {
+		    if ($this->Usuario->saveAll($this->request->data)) {
 		        $this->Session->setFlash('Usuário atualizado com sucesso.');
 		        $this->redirect(array('action' => 'index'));
 		    } else {
