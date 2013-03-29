@@ -40,17 +40,17 @@ CREATE TABLE IF NOT EXISTS `dados` (
   `email` varchar(60) DEFAULT NULL,
   `usuario_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `usuario_id` (`usuario_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+  KEY `usuario_id` (`usuario_id`),
+  KEY `id` (`id`),
+  KEY `usuario_id_2` (`usuario_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Extraindo dados da tabela `dados`
 --
 
 INSERT INTO `dados` (`id`, `endereco`, `numero`, `complemento`, `bairro`, `cidade`, `estado`, `cep`, `telefone1`, `telefone2`, `email`, `usuario_id`) VALUES
-(1, 'RUA IMPERADOR', '233', '', 'CANDEIAS', 'JABOATAO', 'PE', '50000-000', '(81)3333-4444', '(81)3333-4444', 'luis.c.ferraz@gmail.com', 1),
-(4, 'RUA SAO JOAO', '13', '', 'PIEDADE', 'JABOATAO', 'PE', '50000-000', '8133552350', '8133552350', 'luis.c.ferraz@gmail.com', 10),
-(5, 'RUA DOM PEDRO', '233', '202', 'CANDEIAS', 'JABOATAO', 'PE', '50000-000', '8133552350', '8133552350', 'luis.c.ferraz@gmail.com', 9);
+(1, 'RUA IMPERADOR', '233', '', 'CANDEIAS', 'JABOATAO', 'PE', '50000-000', '(81)3333-4444', '(81)3333-4444', 'luis.c.ferraz@gmail.com', 1);
 
 -- --------------------------------------------------------
 
@@ -61,7 +61,7 @@ INSERT INTO `dados` (`id`, `endereco`, `numero`, `complemento`, `bairro`, `cidad
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `login` varchar(20) NOT NULL,
-  `senha` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
   `tipo` enum('admin','user') NOT NULL,
   `nome` varchar(60) NOT NULL,
   `matricula` varchar(20) NOT NULL,
@@ -70,17 +70,26 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `nascimento` varchar(10) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `cpf` (`cpf`),
-  KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+  KEY `id` (`id`),
+  KEY `id_2` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `login`, `senha`, `tipo`, `nome`, `matricula`, `cpf`, `admissao`, `nascimento`) VALUES
-(1, 'luisc', '111', 'admin', 'LUIS CARLOS FERRAZ', '10', '054.553.704-56', '11/12/2013', '23/12/1985'),
-(9, 'john', '123', 'user', 'JOHNNY WALKER', '9839', '002.132.144-12', '20/01/2009', '01/12/2000'),
-(10, 'catarina', '123', 'admin', 'CATARINA FERRAZ', '122', '120.223.123-22', '03/12/2010', '01/12/2000');
+INSERT INTO `usuarios` (`id`, `login`, `password`, `tipo`, `nome`, `matricula`, `cpf`, `admissao`, `nascimento`) VALUES
+(1, 'luisc', '111', 'admin', 'LUIS CARLOS FERRAZ', '10', '054.553.704-56', '11/12/2013', '23/12/1985');
+
+--
+-- Restrições para as tabelas dumpadas
+--
+
+--
+-- Restrições para a tabela `dados`
+--
+ALTER TABLE `dados`
+  ADD CONSTRAINT `dados_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

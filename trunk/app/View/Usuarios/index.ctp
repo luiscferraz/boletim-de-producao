@@ -7,6 +7,7 @@
         <th>Login</th>
         <th>Matrícula</th>
         <th>E-mail</th>
+        <th>Tipo</th>
         <th>Ações</th>
 
     </tr>
@@ -19,6 +20,7 @@
         array('controller' => 'usuarios', 'action' => 'view', $usuario['Usuario']['id'])); ?></td>
         <td><?php echo $usuario['Usuario']['matricula']; ?></td>
         <td><?php echo $usuario['Dados']['email']; ?></td>
+        <td><?php echo $usuario['Usuario']['tipo']; ?></td>
         <td>
         	<?php echo $this->Html->link('Editar', 
                 array('action' => 'edit', $usuario['Usuario']['id'])); ?>
